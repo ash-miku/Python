@@ -133,7 +133,7 @@ def bilibili_Video():
             # 将数据写入云数据库
             try:
                 connent = pymysql.connect(host='miku-miku.top', port=3306,
-                                          user='root', passwd='ly231930', db='bilibili', charset='utf8')
+                                          user='xxx', passwd='xxx', db='xxx', charset='utf8')
                 cursor = connent.cursor()
                 sql = "replace into bilibili_Video values('%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s','%s')" % (str(list[0]), str(list[1]), str(list[2]), pymysql.escape_string(str(
                     list[3])), pymysql.escape_string(str(list[4])), str(list[5]), str(list[6]), str(list[7]), str(list[8]), str(list[9]), str(list[10]), str(list[11]), str(list[12]))
